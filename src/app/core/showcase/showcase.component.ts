@@ -11,7 +11,11 @@ export class ShowcaseComponent implements OnInit {
     configBtn: any = {
         background: '#18CE0F'
     };
+    toggle = true;
     loader = true;
+    toggleInputs() {
+        this.loader = this.toggle;
+    }
 
     constructor(private configService: ConfigurationService) { }
 
@@ -24,7 +28,9 @@ export class ShowcaseComponent implements OnInit {
             this.config.padding += 'px';
             this.configBtn.padding += 'px';
             setTimeout(() => {
-                this.loader = !this.loader;
+                if (this.toggle) {
+                    this.loader = true;
+                }
             }, 0)
         });
     }
