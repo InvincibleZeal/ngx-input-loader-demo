@@ -23,7 +23,7 @@
     "@angular/platform-server": "5.2.2",
     "@angular/router": "5.2.2",
     "@ng-bootstrap/ng-bootstrap": "1.0.0",
-    "ajv": "6.2.1",
+    "ajv": "6.12.3",
     "ajv-keywords": "3.1.0",
     "bootstrap": "4.0.0",
     "copy-webpack-plugin": "4.3.0",
